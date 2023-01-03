@@ -1,4 +1,4 @@
-.PHONY: examples
+.PHONY: wsoula.pdf
 
 CC = xelatex
 EXAMPLES_DIR = examples
@@ -17,6 +17,9 @@ cv.pdf: $(EXAMPLES_DIR)/cv.tex $(CV_SRCS)
 
 coverletter.pdf: $(EXAMPLES_DIR)/coverletter.tex
 	$(CC) -output-directory=$(EXAMPLES_DIR) $<
+
+wsoula.pdf: wsoula.tex
+	$(CC) -output-directory=. $<
 
 clean:
 	rm -rf $(EXAMPLES_DIR)/*.pdf
