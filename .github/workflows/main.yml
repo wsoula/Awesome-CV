@@ -26,5 +26,5 @@ jobs:
 
     - uses: actions/upload-artifact@v6
       with:
-        name: examples
-        path: examples/*.pdf
+        name: wsoula
+        path: wsoula.pdf
