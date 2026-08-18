@@ -1,6 +1,6 @@
 .PHONY: wsoula.pdf
 
-CC = xelatex
+CC = lualatex
 EXAMPLES_DIR = examples
 RESUME_DIR = examples/resume
 CV_DIR = examples/cv
